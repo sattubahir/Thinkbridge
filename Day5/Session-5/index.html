@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Practice - Transitions & Responsive Images</title>
+  <link rel="stylesheet" href="components.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #007BFF;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Practice for Transitions and Responsive Images</h1>
+
+    <section class="section">
+      <h2>Button with Hover and Focus Effects</h2>
+      <button class="button">Hover or Focus Me</button>
+    </section>
+
+    <section class="section">
+      <h2>Icon Rotation on Hover</h2>
+      <span class="icon" style="font-size: 48px;">&#x1F4A1;</span>
+      <p>Hover the lightbulb icon to see it rotate.</p>
+    </section>
+
+    <section class="section">
+      <h2>Card Lift and Shadow on Hover</h2>
+      <div class="card">
+        <h3>Example Card</h3>
+        <p>This card lifts and adds shadow when hovered.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Navigation Link with Smooth Color and Size Change</h2>
+      <a href="#" class="nav-link">Hover or Focus this Link</a>
+    </section>
+<section class="section">
+  <h2>Responsive Image Example</h2>
+  <img 
+    src="images/photo-600.jpg"
+    srcset="
+      images/photo-300.jpg 300w,
+      images/photo-600.jpg 600w
+    "
+    sizes="(max-width: 480px) 100vw, 600px"
+    alt="Scenic photo"
+    style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+  />
+  <p>Resize the browser window to see the image size change.</p>
+</section>
+
+
+
+  </div>
+</body>
+</html>
