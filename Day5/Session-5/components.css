@@ -1,0 +1,63 @@
+
+/* Practicing CSS transitions, transforms, and micro-interactions */
+
+/* Button with smooth background color and scale change on hover/focus */
+.button {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+
+  /* Smooth transition for background and transform */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #0056b3;
+  transform: scale(1.05); /* slightly bigger */
+  outline: none;
+}
+
+/* Icon that rotates on hover */
+.icon {
+  display: inline-block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: rotate(15deg);
+}
+
+/* Card with shadow and lift effect on hover */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transform: translateY(-8px); /* moves up */
+}
+
+/* Nav link with color and size transition on hover/focus */
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease, font-size 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ff6600;
+  font-size: 1.1rem;
+  outline: none;
+}
