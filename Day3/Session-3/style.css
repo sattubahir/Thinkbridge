@@ -1,0 +1,100 @@
+/* Basic reset and body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container styling */
+#signup-container {
+  background-color: #fff;
+  width: 380px;
+  padding: 20px 30px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #999;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Legend style */
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* Form group layout */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Inputs basics */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+/* Buttons container */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons styling */
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  width: 48%;
+}
+
+/* Submit button color */
+input[type="submit"] {
+  background-color: #007bff;
+}
+
+/* Reset button color */
+input[type="reset"] {
+  background-color: #dc3545;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+input[type="reset"]:hover {
+  background-color: #a71d2a;
+}
