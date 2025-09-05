@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessible Signup Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="signup-container" aria-label="Signup form container">
+    <h1>Sign Up</h1>
+    <form action="#" method="post" aria-describedby="formInstructions" novalidate>
+      <p id="formInstructions" class="sr-only">All fields are required. Please fill in the form to create an account.</p>
+      <fieldset>
+        <legend>Sign Up Details</legend>
+
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" autocomplete="name" required aria-required="true" minlength="2" aria-describedby="fullnameHelp" placeholder="Your full name" />
+          <small id="fullnameHelp">Please enter your full name.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" required aria-required="true" pattern="^[a-zA-Z0-9_-]{3,15}$" aria-describedby="usernameHelp" placeholder="3-15 chars, letters, numbers, _ or -" />
+          <small id="usernameHelp">3-15 characters; letters, numbers, underscores, and hyphens allowed.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="emailHelp" placeholder="example@mail.com" />
+          <small id="emailHelp">Enter a valid email address.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" required aria-required="true" minlength="8" aria-describedby="passwordHelp" placeholder="Minimum 8 characters" />
+          <small id="passwordHelp">Minimum 8 characters.</small>
+        </div>
+      </fieldset>
+
+      <div class="form-actions">
+        <input type="submit" value="Sign Up" />
+        <input type="reset" value="Cancel" />
+      </div>
+    </form>
+  </section>
+
+  <style>
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+  </style>
+</body>
+</html>
