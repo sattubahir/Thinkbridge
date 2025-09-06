@@ -87,3 +87,24 @@ document.getElementById("search").addEventListener("input", function () {
       container.appendChild(card);
     });
 });
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+window.onscroll = function () {
+  document.getElementById("backToTop").style.display =
+    document.documentElement.scrollTop > 300 ? "block" : "none";
+};
+
+document.getElementById("themeToggle").addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+  this.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+});
+// ✅ Initial Render
+
+
+renderKeywords();
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+} 
