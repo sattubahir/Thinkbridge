@@ -129,3 +129,59 @@ button#backToTop, button#themeToggle {
   color: white;
   padding: 12px;
 }
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(232, 67, 147, 0.3);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.card span.category {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.card.HTML h3::before {
+  content: "📄 ";
+}
+
+.card.CSS h3::before {
+  content: "🎨 ";
+}
+
+.card.JavaScript h3::before {
+  content: "⚡ ";
+}
+
+.card.HTML span {
+  background: #fab1a0;
+}
+
+.card.CSS span {
+  background: #74b9ff;
+}
+
+.card.JavaScript span {
+  background: #ffeaa7;
+}

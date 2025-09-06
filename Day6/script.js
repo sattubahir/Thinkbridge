@@ -43,3 +43,40 @@ function filterCategory(category, e) {
 }
 
 renderKeywords();
+
+document.getElementById("search").addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  const container = document.getElementById("keywords");
+  container.innerHTML = "";
+
+  keywords
+    .filter(k => k.title.toLowerCase().includes(query) || k.desc.toLowerCase().includes(query))
+    .forEach(k => {
+      const card = document.createElement("div");
+      card.className = `card ${k.category}`;
+      card.innerHTML = `
+        <h3>${k.title}</h3>
+        <p>${k.desc}</p>
+        <span class="category">${k.category}</span>
+      `;
+      container.appendChild(card);
+    });
+});
+document.getElementById("search").addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  const container = document.getElementById("keywords");
+  container.innerHTML = "";
+
+  keywords
+    .filter(k => k.title.toLowerCase().includes(query) || k.desc.toLowerCase().includes(query))
+    .forEach(k => {
+      const card = document.createElement("div");
+      card.className = `card ${k.category}`;
+      card.innerHTML = `
+        <h3>${k.title}</h3>
+        <p>${k.desc}</p>
+        <span class="category">${k.category}</span>
+      `;
+      container.appendChild(card);
+    });
+});
