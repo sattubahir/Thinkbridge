@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML, CSS,  And JavaScript Keywords</title>
-       <link rel="stylesheet" href="style.css"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dev Keywords Glossary</title>
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>HTML,CSS, And JavaScript Keywords</h1>
-    </header>
-    <main>
-        <section id="html-keywords" class="collapsible-section">
-            <h2 class="collapsible-header" tabinex="0" role="button" aria-expanded="true" aria-controls="html-keywords-content">
-                HTML Keywords
-            </h2>
-            <div id="html-keywords-content" class="collapsible-content" role="region">
-        <ul>
-          <li><strong>div</strong> -section or division in a document.</li>
-          <li><strong>span</strong> - Inline container for text or elements.</li>
-          <li><strong>a</strong> - to define hiperlink.</li>
-          <li><strong>p</strong> -  paragraph.</li>
-    
-        </ul>
-      </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  <!-- Header -->
+  <header>
+    <h1>🌸 Web Dev Keywords Glossary</h1>
+    <p>A delightful handbook of essential HTML, CSS, and JavaScript concepts.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button class="active" onclick="filterCategory('All', event)">All</button>
+    <button onclick="filterCategory('HTML', event)">HTML</button>
+    <button onclick="filterCategory('CSS', event)">CSS</button>
+    <button onclick="filterCategory('JavaScript', event)">JavaScript</button>
+  </nav>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="search" placeholder="🔍 Search a keyword...">
+  </div>
+
+  <!-- Keywords Grid -->
+  <main id="keywords"></main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
+  <!-- Dark/Light Toggle -->
+  <button id="themeToggle">🌙</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
