@@ -1,9 +1,16 @@
 const keywords = [
-  { title: "Semantic HTML Elements", desc: "Elements like <header>, <article>, <footer> give meaning to content.", category: "HTML" },
+   { 
+    title: "Semantic HTML Elements", 
+    desc: "Elements like &lt;header&gt;, &lt;article&gt;, &lt;footer&gt; give meaning to content.", 
+    category: "HTML" 
+  },
   { title: "Document Structure", desc: "HTML pages follow a structure: DOCTYPE, head, and body.", category: "HTML" },
   { title: "Accessibility Attributes", desc: "Attributes like aria-label improve usability for screen readers.", category: "HTML" },
-  { title: "HTML5 Features", desc: "Includes new input types, <video>, <audio>, and <canvas>.", category: "HTML" },
-
+  { 
+    title: "HTML5 Features", 
+    desc: "Includes new input types, &lt;video&gt;, &lt;audio&gt;, and &lt;canvas&gt;.", 
+    category: "HTML" 
+  },
   { title: "CSS Selectors and Properties", desc: "Selectors target elements, properties style them.", category: "CSS" },
   { title: "Box Model", desc: "Every element is a box with content, padding, border, and margin.", category: "CSS" },
   { title: "Flexbox Layout", desc: "A layout model to align items in rows or columns.", category: "CSS" },
