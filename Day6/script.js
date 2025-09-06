@@ -102,8 +102,6 @@ document.getElementById("themeToggle").addEventListener("click", function () {
   this.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
 });
 // ✅ Initial Render
-
-
 renderKeywords();
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
