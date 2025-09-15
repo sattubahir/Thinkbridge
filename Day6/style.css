@@ -186,3 +186,76 @@ button#backToTop, button#themeToggle {
 .card.JavaScript span {
   background: #ffeaa7;
 }
+/* 🌞 Light Mode (default) */
+body {
+  background: #ffe6f0; /* light pink */
+  color: #333;         /* dark text */
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode 🌙 */
+body.dark-mode {
+  background: #1e1e1e;  /* dark gray */
+  color: #f5f5f5;       /* light text */
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .card {
+  background: #2a2a2a;
+  color: #f5f5f5;
+  border: 1px solid #444;
+}
+
+/* Category tags (HTML / CSS / JS labels) */
+.category {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+body.dark-mode .category {
+  background: #ff8c8c; /* keep color visible in dark mode */
+  color: #fff;
+}
+
+/* Buttons */
+button, .login-btn {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode button,
+body.dark-mode .login-btn {
+  background: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.dark-mode button.active {
+  background: #6a5acd; /* purple highlight in dark mode */
+  color: #fff;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8a5c2, #fbc531);
+  color: #fff;
+  font-size: 14px;
+  margin-top: 40px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+}
+footer p {
+  margin: 5px 0;
+}
