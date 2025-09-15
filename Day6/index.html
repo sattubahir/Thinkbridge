@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Dev Keywords Glossary</title>
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🌸 Web Dev Keywords Glossary</h1>
+    <p>A delightful handbook of essential HTML, CSS, and JavaScript concepts.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button class="active" onclick="filterCategory('All', event)">All</button>
+    <button onclick="filterCategory('HTML', event)">HTML</button>
+    <button onclick="filterCategory('CSS', event)">CSS</button>
+    <button onclick="filterCategory('JavaScript', event)">JavaScript</button>
+  </nav>
+
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" id="search" placeholder="🔍 Search a keyword...">
+  </div>
+
+  <!-- Keywords Grid -->
+  <main id="keywords"></main>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
+  <!-- Dark/Light Toggle -->
+  <button id="themeToggle">🌙</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
